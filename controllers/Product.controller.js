@@ -2,6 +2,7 @@ const Product = require('../Models/Product.models');
 const createHttpError = require('http-errors');
 const mongoose  = require('mongoose');
 
+
 module.exports = {
     getAllProducts:(req,res,next)=>{
         // Product.find({},{name:1,_id:0,price:1})
