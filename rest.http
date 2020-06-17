@@ -1,0 +1,47 @@
+GET http://localhost:3000/products  
+
+### creating new products
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name":"Apple watch",
+    "price":1100
+}
+
+### GET a proudct by id
+GET http://localhost:3000/products/5ee8f2c0803c0321e46bce00
+
+### Update a product by id
+PATCH http://localhost:3000/products/5ee8f2c0803c0321e46bce00
+Content-Type: application/json
+
+{
+    "price": 1999
+}
+
+### Delet a product by id
+DELETE  http://localhost:3000/products/5ee8f2c0803c0321e46bce00
+
+### NOT FOUND
+get http://localhost:3000/asdfghjgtfd
+
+###
+GET http://localhost:3000/test?name=imac&price=2300
+###
+GET http://localhost:3000/test/789876
+
+###
+POST http://localhost:3000/test
+Content-Type: application/json
+
+{
+    "name":"macbook",
+    "price":44444
+}
+
+###
+POST http://localhost:3000/test
+Content-Type: application/x-www-form-urlencoded
+
+name=imac&price=4999
